@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ResultFragment">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_animation"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/done"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtCongrats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lottie_animation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        style="@style/colorTheme"
+        android:text="@string/congratulations"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCongrats"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        style="@style/colorTheme"
+        android:text="You've submitted your exam"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtMessage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="successfully!"
+        android:textColor="@color/text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtDisplayMarks"
+        style="@style/colorTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMessage1"
+        android:layout_marginTop="57dp"
+        android:fontFamily="serif"
+        android:layout_centerHorizontal="true"
+        android:text="You got"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtDisplayMarks"
+        android:layout_marginTop="20sp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/neavy_blue"
+        tools:Text="100" />
+
+    <TextView
+        style="@style/colorTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMarks"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:layout_centerHorizontal="true"
+        android:text="Marks in your previous exam."
+        android:textSize="20sp" />
+
+</RelativeLayout>
